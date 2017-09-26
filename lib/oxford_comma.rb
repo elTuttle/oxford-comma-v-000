@@ -3,7 +3,7 @@ def oxford_comma(array)
   array.size == 2 ? response = array.join(" and "):response += ""
   if array.size > 2
     array[array.length-1] = "and #{array[array.length-1]}"
-    array.join(", ")
+    response = array.join(", ")
   end
 
   response
